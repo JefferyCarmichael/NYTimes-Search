@@ -1,6 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
-    text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.507)
+    text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.335)
 }
 
 #articles{
@@ -8,13 +8,13 @@
 }
 
 .jumbotron, .card{
-    box-shadow: 4px 4px 20px 1px rgba(41, 41, 41, 0.39)
+    box-shadow: 4px 4px 25px 2px rgba(47, 47, 47, 0.39)
 }
 
 .btn{
-    box-shadow: 2px 2px 5px 1px rgba(42, 42, 42, 0.404)
+    box-shadow: 2px 2px 8px 1px rgba(42, 42, 42, 0.404)
 }
 
 #trash{
-    color: rgb(251, 96, 96);
+    color: rgb(238, 69, 69);
 }
