@@ -3,8 +3,12 @@
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.335)
 }
 
-#articles{
+#articles,.jumbotron{
     margin-top: 30px;
+}
+
+#articles{
+    margin-bottom: 30px;
 }
 
 .jumbotron, .card{
@@ -35,10 +39,18 @@ li{
 }
 
 body{
-    background-image: url("../images/newspaper.jpg");
+    background-image: url("../images/nytfrontpage2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
+}
+.blank{
+    font-size: 20px;
+    color: red;
+}
+
+label{
+    font-size: 18px;
 }

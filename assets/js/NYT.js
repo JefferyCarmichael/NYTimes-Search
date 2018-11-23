@@ -48,6 +48,8 @@ $.ajax({
 });
 
 function postArticles(results){
+    $("#results").empty();
+  
     // console.log(results.response.docs[i].headline.main )
 // console.log("results: "+ results.response.docs[0].headline );
 var listArticle =$("<ul>");
@@ -70,6 +72,7 @@ $("#results").append(listArticle);
 //Clears result field.
 function clear(){
     $("#results").empty();
+    $("#results").html("<i class='fas fa-minus-circle blank'> Empty</i>")
 }
 
 $("#clearSearch").on("click",function(event){
