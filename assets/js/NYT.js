@@ -1,13 +1,13 @@
 
 //Base url
- var apiUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?";
+ const apiUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?";
 
  //NYT api -key.
- var parameter = {"api-key": "b9f91d369ff59547cd47b931d8cbc56b:0:74623931"};
+ const parameter = {"api-key": "b9f91d369ff59547cd47b931d8cbc56b:0:74623931"};
 
 
 //Execute is search button is clicked.
-$("#startSearch").on("click",function(event){
+$("#startSearch").on("click",(event)=>{
     event.preventDefault();
 
 console.log("start");
@@ -16,9 +16,9 @@ parameter.q = $("#search").val().trim();
 console.log("q: "+parameter.q);
 
 //Get beginning date from form.
-var begin_date = $("#startYear").val().trim();
+const begin_date = $("#startYear").val().trim();
 //Get ending date from form.
-var end_date = $("#endYear").val().trim();
+const end_date = $("#endYear").val().trim();
 
 //If beginning date and end date are present, get dates and add them to parameter,  else skip it.
 if(begin_date && end_date){
@@ -30,31 +30,33 @@ if(begin_date && end_date){
 }
 console.log(parameter);
 
-var url = apiUrl + $.param(parameter);
+const url = apiUrl + $.param(parameter);
 
 console.log(url);
 
 $.ajax({
     url: url,
     method:"get"
-}).then(function(results){
+}).then((results)=>{
     console.log(results);
     // console.log(results.response.docs[0].headline.main )
     postArticles(results);
-}).catch(function(err){
+}).catch((err)=>{
     throw err;
 });
 
 });
 
 function postArticles(results){
+    $("#results").empty();
+  
     // console.log(results.response.docs[i].headline.main )
 // console.log("results: "+ results.response.docs[0].headline );
-var listArticle =$("<ul>");
+const listArticle =$("<ul>");
 //Get number of records requested.
-var  records = $("#records").val().trim();
+const  records = $("#records").val().trim();
 console.log(records)
-for(var i =0; i< records; i++){
+for(let i =0; i< records; i++){
   
 var listItems =$("<li>");
 
@@ -70,9 +72,10 @@ $("#results").append(listArticle);
 //Clears result field.
 function clear(){
     $("#results").empty();
+    $("#results").html("<i class='fas fa-minus-circle blank'> Empty</i>")
 }
 
-$("#clearSearch").on("click",function(event){
+$("#clearSearch").on("click",(event)=>{
     event.preventDefault();
    clear();
 });

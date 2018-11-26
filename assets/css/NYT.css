@@ -1,22 +1,74 @@
 * {
     font-family: 'Roboto', sans-serif;
-    text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.335)
+    text-shadow: .125rem .125rem .3125rem rgba(58, 57, 57, 0.335)
+}
+
+#articles,.jumbotron{
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
 }
 
 #articles{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .jumbotron, .card{
-    margin-top: 30px;
-    box-shadow: 4px 4px 25px 2px rgba(47, 47, 47, 0.39)
+    box-shadow: .25rem .25rem 1.25rem .3125rem rgba(47, 47, 47, 0.39);
+    box-shadow: inset 0rem 0rem 1.875rem .0625rem rgba(47, 47, 47, 0.39),.125rem .125rem .625rem .0625rem rgba(17, 17, 17, 0.637);
 }
 
 .btn{
-    box-shadow: 2px 2px 8px 1px rgba(42, 42, 42, 0.404)
+    box-shadow: .25rem .25rem .375rem .0625rem rgba(42, 42, 42, 0.527)
+}
+
+.btn:hover {
+    color: rgb(234, 236, 122);
+    box-shadow: 0rem .9375rem 1.25rem rgba(153, 163, 18, 0.4);
+}
+
+.btn:active {
+        color: rgb(114, 240, 190) !important;
+        box-shadow: 0rem .9375rem 1.25rem rgba(18, 163, 105, 0.4) !important; 
+        transform: translateY(.125rem);
 }
 
 #trash{
     color: rgb(238, 69, 69);
+}
+
+li{
+    margin-bottom: 1.875rem;
+    box-shadow: inset .0625rem .0625rem .125rem .0625rem rgba(42, 42, 42, 0.404);
+    padding: .9375rem;
+    border-radius: .125rem;
+}
+
+li:hover{
+    background-color: #e8e9ec5b;
+}
+
+#search, #records, #startYear, #endYear {
+    box-shadow: inset .0625rem .0625rem .125rem .0625rem rgba(42, 42, 42, 0.404);
+    border-radius: .25rem;
+}
+
+#search:hover, #records:hover, #startYear:hover, #endYear:hover {
+    background-color: #dadbdd5b;
+}
+
+body{
+    background-image: url("../images/nytfrontpage3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.blank{
+    font-size: 1.45rem;
+    color: red;
+}
+
+label{
+    font-size: 1.125rem;
 }
