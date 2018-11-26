@@ -13,8 +13,8 @@
 }
 
 .jumbotron, .card{
-    box-shadow: .25rem .25rem 1.25rem .3125rem rgba(47, 47, 47, 0.39);
-    box-shadow: inset 0rem 0rem 1.875rem .0625rem rgba(47, 47, 47, 0.39),.125rem .125rem .625rem .0625rem rgba(17, 17, 17, 0.637);
+    /* box-shadow: .25rem .25rem 1.25rem .3125rem rgba(47, 47, 47, 0.39); */
+    box-shadow: inset 0rem 0rem .3125rem .0625rem rgba(47, 47, 47, 0.39),.125rem .125rem .625rem .0625rem rgba(17, 17, 17, 0.637);
 }
 
 .btn{
