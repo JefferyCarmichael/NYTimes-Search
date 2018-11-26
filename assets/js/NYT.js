@@ -4,7 +4,9 @@
 
  //NYT api -key.
  const parameter = {"api-key": "b9f91d369ff59547cd47b931d8cbc56b:0:74623931"};
-
+ 
+ //No search done yet
+ let resultAvail = 0;
 
 //Execute is search button is clicked.
 $("#startSearch").on("click",(event)=>{
@@ -48,9 +50,10 @@ $.ajax({
 });
 
 function postArticles(results){
+    if(resultAvail===0){
     $("#results").empty();
-  
-    // console.log(results.response.docs[i].headline.main )
+    }
+ // console.log(results.response.docs[i].headline.main )
 // console.log("results: "+ results.response.docs[0].headline );
 const listArticle =$("<ul>");
 //Get number of records requested.
@@ -64,15 +67,16 @@ var listItems =$("<li>");
     listItems.append("<p>" + results.response.docs[i].snippet+"</p>");
     listItems.append("<a href =" + "'" + results.response.docs[i].web_url+"'" +">" +results.response.docs[i].web_url+"</a>");
     listArticle.append(listItems);
-$("#results").append(listArticle);
+$("#results").prepend(listArticle);
 }
-
+resultAvail =1;
 }
 
 //Clears result field.
 function clear(){
     $("#results").empty();
     $("#results").html("<i class='fas fa-minus-circle blank'> Empty</i>")
+    resultAvail=0;
 }
 
 $("#clearSearch").on("click",(event)=>{
