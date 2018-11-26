@@ -8,12 +8,17 @@ Searches for articles based on the subject.
 ![NYT Front page](/assets/images/nyt2.jpg)
 
 
-1. Enter the subject that you want to search for.
+1. Enter the subject that you want to use to conduct a search.
 
-2. Choose the number of articles to search for.  Minimum 1. Max 5
+2. Choose the number of articles that you would like the search to return.  Minimum 1. Max 10
 
 3. The date is optional.  Must be entered in the *YYYYMMDD*  format.
 
+4. Hit enter to start search.  
+
+The results to the search will appear under *Top Articles*.
+
+Search results can be cleared by clicking the clear button.
 
 ![NYT Front page](/assets/images/nyt3.jpg)
 
