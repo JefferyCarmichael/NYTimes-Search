@@ -60,7 +60,7 @@ const listArticle =$("<ul>");
 const  records = $("#records").val().trim();
 console.log(records)
 for(let i =0; i< records; i++){
-  
+  //post article to web page.
 var listItems =$("<li>");
 
     listItems.append("<h5>"+"<b>" + results.response.docs[i].headline.main+"</b>"+"</h5>");
