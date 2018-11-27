@@ -27,5 +27,5 @@ Search results can be cleared by clicking the clear button.
 ### Technologies used:
 
 ### URL:
-
+https://jefferycarmichael.github.io/NYTimes-Search/
 

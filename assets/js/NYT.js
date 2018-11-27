@@ -3,7 +3,7 @@
  const apiUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?";
 
  //NYT api -key.
- const parameter = {"api-key": "b9f91d369ff59547cd47b931d8cbc56b:0:74623931"};
+ const parameter = {"api-key": "6ae2dd03fee94ee5acd989958b834c70"};
  
  //No search done yet
  let resultAvail = 0;
