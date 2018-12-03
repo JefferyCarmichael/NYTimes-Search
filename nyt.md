@@ -26,6 +26,13 @@ Search results can be cleared by clicking the clear button.
 ---
 ### Technologies used:
 
+* Html
+* CSS
+* Javascript
+* JQuery
+* Ajax
+* New York Times api
+
 ### URL:
 https://jefferycarmichael.github.io/NYTimes-Search/
 
