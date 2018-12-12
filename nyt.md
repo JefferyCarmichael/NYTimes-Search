@@ -1,5 +1,4 @@
 # New York Times Article Search
----
 
 
 ![NYT Front page](/assets/images/nyt.jpg)
