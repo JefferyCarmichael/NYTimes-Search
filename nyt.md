@@ -36,3 +36,5 @@ Search results can be cleared by clicking the clear button.
 ### URL:
 https://jefferycarmichael.github.io/NYTimes-Search/
 
+### GitHub:
+https://github.com/JefferyCarmichael/NYTimes-Search
