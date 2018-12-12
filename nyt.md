@@ -2,7 +2,7 @@
 ---
 
 
-![NYT Front page](/assets/images/nyt1.jpg)
+![NYT Front page](/assets/images/nyt.jpg)
 Searches for articles based on the subject.
 
 ![NYT Front page](/assets/images/nyt2.jpg)
