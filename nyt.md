@@ -1,8 +1,8 @@
 # New York Times Article Search
 
 
+![NYT Front page](/assets/images/nyt.jpg)
 
-![NYT Front page](/assets/images/nyt1.jpg)
 Searches for articles based on the subject.
 
 ![NYT Front page](/assets/images/nyt2.jpg)
@@ -37,5 +37,9 @@ Search results can be cleared by clicking the clear button.
 https://jefferycarmichael.github.io/NYTimes-Search/
 
 ### GitHub:
+<<<<<<< HEAD
 https://github.com/JefferyCarmichael/NYTimes-Search
 
+=======
+https://github.com/JefferyCarmichael/NYTimes-Search
+>>>>>>> a06541ad43741a854c792e20361d09f79e651d66
